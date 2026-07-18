@@ -1,0 +1,43 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+// The player's nation — a singleton row (id = "el-sovaraldo")
+model Nation {
+  id             String   @id @default("el-sovaraldo")
+  name           String   @default("El Sovaraldo")
+  motto          String   @default("E Pluribus Unum")
+  overview       String?  // the nation's full description pasted from NationStates
+  americanness   Int      @default(50) // 0-100, how USA-themed the nation is
+  freedom        Int      @default(50) // 0-100 civil freedoms
+  economy        Int      @default(50) // 0-100 economic strength
+  democracy      Int      @default(50) // 0-100 political freedom
+  decisionsCount Int      @default(0)
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+}
+
+// A single NationStates issue that America weighed in on
+model Decision {
+  id               String   @id @default(cuid())
+  issueTitle       String
+  issueText        String
+  chosenOption     String
+  reasoning        String
+  patrioticQuote   String?
+  americannessScore Int     // 0-100 how American this single choice was
+  freedomDelta     Int      @default(0)
+  economyDelta     Int      @default(0)
+  democracyDelta   Int      @default(0)
+  // JSON-encoded array of { label, summary } for all options considered.
+  options          String?
+  createdAt        DateTime @default(now())
+}

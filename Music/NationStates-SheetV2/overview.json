@@ -1,0 +1,473 @@
+{
+  "rootFolder": "c:\\Users\\User\\Music\\NationStates-SheetV2",
+  "analyzedAt": "2026-07-18T20:38:20.663Z",
+  "rootStructure": [
+    {
+      "name": ".gitignore",
+      "type": "file",
+      "size": 586,
+      "lines": 54
+    },
+    {
+      "name": "bun.lock",
+      "type": "file",
+      "size": 328127,
+      "lines": 1966
+    },
+    {
+      "name": "components.json",
+      "type": "file",
+      "size": 430,
+      "lines": 21
+    },
+    {
+      "name": "eslint.config.mjs",
+      "type": "file",
+      "size": 1632,
+      "lines": 51
+    },
+    {
+      "name": "next-env.d.ts",
+      "type": "file",
+      "size": 251,
+      "lines": 7
+    },
+    {
+      "name": "next.config.ts",
+      "type": "file",
+      "size": 233,
+      "lines": 13
+    },
+    {
+      "name": "package.json",
+      "type": "file",
+      "size": 3194,
+      "lines": 95
+    },
+    {
+      "name": "postcss.config.mjs",
+      "type": "file",
+      "size": 81,
+      "lines": 6
+    },
+    {
+      "name": "prisma",
+      "type": "dir"
+    },
+    {
+      "name": "public",
+      "type": "dir"
+    },
+    {
+      "name": "src",
+      "type": "dir"
+    },
+    {
+      "name": "tailwind.config.ts",
+      "type": "file",
+      "size": 1696,
+      "lines": 65
+    },
+    {
+      "name": "tsconfig.json",
+      "type": "file",
+      "size": 730,
+      "lines": 43
+    }
+  ],
+  "rootFileSnippets": {
+    "bun.lock": [
+      "{",
+      "\"lockfileVersion\": 1,",
+      "\"configVersion\": 1,",
+      "\"workspaces\": {",
+      "\"\": {",
+      "\"name\": \"nextjs_tailwind_shadcn_ts\",",
+      "\"dependencies\": {",
+      "\"@dnd-kit/core\": \"^6.3.1\",",
+      "\"@dnd-kit/sortable\": \"^10.0.0\",",
+      "\"@dnd-kit/utilities\": \"^3.2.2\","
+    ],
+    "components.json": [
+      "{",
+      "\"$schema\": \"https://ui.shadcn.com/schema.json\",",
+      "\"style\": \"new-york\",",
+      "\"rsc\": true,",
+      "\"tsx\": true,",
+      "\"tailwind\": {",
+      "\"config\": \"\",",
+      "\"css\": \"src/app/globals.css\",",
+      "\"baseColor\": \"neutral\",",
+      "\"cssVariables\": true,"
+    ],
+    "eslint.config.mjs": [
+      "import nextCoreWebVitals from \"eslint-config-next/core-web-vitals\";",
+      "import nextTypescript from \"eslint-config-next/typescript\";",
+      "import { dirname } from \"path\";",
+      "import { fileURLToPath } from \"url\";",
+      "",
+      "const __filename = fileURLToPath(import.meta.url);",
+      "const __dirname = dirname(__filename);",
+      "",
+      "const eslintConfig = [...nextCoreWebVitals, ...nextTypescript, {",
+      "rules: {"
+    ],
+    "next-env.d.ts": [
+      "/// <reference types=\"next\" />",
+      "/// <reference types=\"next/image-types/global\" />",
+      "import \"./.next/dev/types/routes.d.ts\";",
+      "",
+      "// NOTE: This file should not be edited",
+      "// see https://nextjs.org/docs/app/api-reference/config/typescript for more information.",
+      ""
+    ],
+    "next.config.ts": [
+      "import type { NextConfig } from \"next\";",
+      "",
+      "const nextConfig: NextConfig = {",
+      "output: \"standalone\",",
+      "/* config options here */",
+      "typescript: {",
+      "ignoreBuildErrors: true,",
+      "},",
+      "reactStrictMode: false,",
+      "};"
+    ],
+    "package.json": [
+      "{",
+      "\"name\": \"nextjs_tailwind_shadcn_ts\",",
+      "\"version\": \"0.2.0\",",
+      "\"private\": true,",
+      "\"scripts\": {",
+      "\"dev\": \"next dev -p 3000 2>&1 | tee dev.log\",",
+      "\"build\": \"next build && cp -r .next/static .next/standalone/.next/ && cp -r public .next/standalone/\",",
+      "\"start\": \"NODE_ENV=production bun .next/standalone/server.js 2>&1 | tee server.log\",",
+      "\"lint\": \"eslint .\",",
+      "\"db:push\": \"prisma db push\","
+    ],
+    "postcss.config.mjs": [
+      "const config = {",
+      "plugins: [\"@tailwindcss/postcss\"],",
+      "};",
+      "",
+      "export default config;",
+      ""
+    ],
+    "tailwind.config.ts": [
+      "import type { Config } from \"tailwindcss\";",
+      "import tailwindcssAnimate from \"tailwindcss-animate\";",
+      "",
+      "const config: Config = {",
+      "darkMode: \"class\",",
+      "content: [",
+      "\"./pages/**/*.{js,ts,jsx,tsx,mdx}\",",
+      "\"./components/**/*.{js,ts,jsx,tsx,mdx}\",",
+      "\"./app/**/*.{js,ts,jsx,tsx,mdx}\",",
+      "],"
+    ],
+    "tsconfig.json": [
+      "{",
+      "\"compilerOptions\": {",
+      "\"target\": \"ES2017\",",
+      "\"lib\": [",
+      "\"dom\",",
+      "\"dom.iterable\",",
+      "\"esnext\"",
+      "],",
+      "\"allowJs\": true,",
+      "\"skipLibCheck\": true,"
+    ]
+  },
+  "importantFolders": [
+    {
+      "path": "public",
+      "category": "assets",
+      "fileCount": 3
+    },
+    {
+      "path": "src\\app",
+      "category": "frontend",
+      "fileCount": 8,
+      "primaryLanguage": "TypeScript"
+    },
+    {
+      "path": "src\\app\\api",
+      "category": "backend",
+      "fileCount": 5,
+      "primaryLanguage": "TypeScript"
+    },
+    {
+      "path": "src\\components",
+      "category": "frontend",
+      "fileCount": 48,
+      "primaryLanguage": "TypeScript"
+    },
+    {
+      "path": "src\\components\\ui",
+      "category": "frontend",
+      "fileCount": 48,
+      "primaryLanguage": "TypeScript"
+    },
+    {
+      "path": "src\\lib",
+      "category": "core",
+      "fileCount": 2,
+      "primaryLanguage": "TypeScript"
+    }
+  ],
+  "readmeParagraphs": {},
+  "totals": {
+    "numFiles": 75,
+    "numDirs": 13,
+    "totalSizeBytes": 796828,
+    "totalLinesOfCode": 7527
+  },
+  "fileCategories": {
+    "other": 9,
+    "config": 3,
+    "source": 62,
+    "documentation": 1
+  },
+  "linesOfCodePerLanguage": {
+    "TypeScript": 7527
+  },
+  "filesPerLanguage": {
+    "TypeScript": 62
+  },
+  "projectTypes": [
+    "JavaScript/Node.js"
+  ],
+  "frameworks": [
+    "React",
+    "Next.js"
+  ],
+  "entryPoints": [],
+  "ciCdTools": [],
+  "packageManagers": [
+    "npm/yarn"
+  ],
+  "topLevelDirectories": [
+    {
+      "name": "src",
+      "numFiles": 60,
+      "totalLoc": 7442,
+      "dominantLanguage": "TypeScript"
+    },
+    {
+      "name": "prisma",
+      "numFiles": 1,
+      "totalLoc": 0
+    },
+    {
+      "name": "public",
+      "numFiles": 3,
+      "totalLoc": 0
+    }
+  ],
+  "detailedDirectories": [
+    {
+      "path": "src",
+      "name": "src",
+      "level": 1,
+      "numFiles": 60,
+      "totalLoc": 7442,
+      "dominantLanguage": "TypeScript",
+      "category": "General",
+      "description": "General module with 60 files (TypeScript)",
+      "subdirectories": [
+        {
+          "path": "src\\components",
+          "name": "components",
+          "level": 2,
+          "numFiles": 48,
+          "totalLoc": 5445,
+          "dominantLanguage": "TypeScript",
+          "category": "General",
+          "description": "General module with 48 files (TypeScript)",
+          "subdirectories": [
+            {
+              "path": "src\\components\\ui",
+              "name": "ui",
+              "level": 3,
+              "numFiles": 48,
+              "totalLoc": 5445,
+              "dominantLanguage": "TypeScript",
+              "category": "Web/UI",
+              "description": "Web/UI module with 48 files (TypeScript)",
+              "subdirectories": []
+            }
+          ]
+        },
+        {
+          "path": "src\\app",
+          "name": "app",
+          "level": 2,
+          "numFiles": 8,
+          "totalLoc": 1763,
+          "dominantLanguage": "TypeScript",
+          "category": "Application",
+          "description": "Application module with 8 files (TypeScript)",
+          "subdirectories": [
+            {
+              "path": "src\\app\\api",
+              "name": "api",
+              "level": 3,
+              "numFiles": 5,
+              "totalLoc": 375,
+              "dominantLanguage": "TypeScript",
+              "category": "Service",
+              "description": "Service module with 5 files (TypeScript)",
+              "subdirectories": []
+            }
+          ]
+        },
+        {
+          "path": "src\\hooks",
+          "name": "hooks",
+          "level": 2,
+          "numFiles": 2,
+          "totalLoc": 214,
+          "dominantLanguage": "TypeScript",
+          "category": "General",
+          "description": "General module with 2 files (TypeScript)",
+          "subdirectories": []
+        },
+        {
+          "path": "src\\lib",
+          "name": "lib",
+          "level": 2,
+          "numFiles": 2,
+          "totalLoc": 20,
+          "dominantLanguage": "TypeScript",
+          "category": "Library",
+          "description": "Library module with 2 files (TypeScript)",
+          "subdirectories": []
+        }
+      ]
+    },
+    {
+      "path": "public",
+      "name": "public",
+      "level": 1,
+      "numFiles": 3,
+      "totalLoc": 0,
+      "category": "General",
+      "description": "General module with 3 files",
+      "subdirectories": []
+    },
+    {
+      "path": "prisma",
+      "name": "prisma",
+      "level": 1,
+      "numFiles": 1,
+      "totalLoc": 0,
+      "category": "General",
+      "description": "General module with 1 files",
+      "subdirectories": []
+    }
+  ],
+  "architecturalInsights": {
+    "coreApplications": [],
+    "entryPointDetails": [],
+    "serviceArchitecture": {
+      "microservices": [],
+      "monoliths": [],
+      "libraries": []
+    },
+    "layeredArchitecture": {
+      "presentation": [],
+      "business": [],
+      "data": [],
+      "infrastructure": []
+    }
+  },
+  "largeFiles": [],
+  "dependencies": {
+    "production": [
+      "@dnd-kit/core",
+      "@dnd-kit/sortable",
+      "@dnd-kit/utilities",
+      "@hookform/resolvers",
+      "@mdxeditor/editor",
+      "@prisma/client",
+      "@radix-ui/react-accordion",
+      "@radix-ui/react-alert-dialog",
+      "@radix-ui/react-aspect-ratio",
+      "@radix-ui/react-avatar",
+      "@radix-ui/react-checkbox",
+      "@radix-ui/react-collapsible",
+      "@radix-ui/react-context-menu",
+      "@radix-ui/react-dialog",
+      "@radix-ui/react-dropdown-menu",
+      "@radix-ui/react-hover-card",
+      "@radix-ui/react-label",
+      "@radix-ui/react-menubar",
+      "@radix-ui/react-navigation-menu",
+      "@radix-ui/react-popover",
+      "@radix-ui/react-progress",
+      "@radix-ui/react-radio-group",
+      "@radix-ui/react-scroll-area",
+      "@radix-ui/react-select",
+      "@radix-ui/react-separator",
+      "@radix-ui/react-slider",
+      "@radix-ui/react-slot",
+      "@radix-ui/react-switch",
+      "@radix-ui/react-tabs",
+      "@radix-ui/react-toast",
+      "@radix-ui/react-toggle",
+      "@radix-ui/react-toggle-group",
+      "@radix-ui/react-tooltip",
+      "@reactuses/core",
+      "@tanstack/react-query",
+      "@tanstack/react-table",
+      "class-variance-authority",
+      "clsx",
+      "cmdk",
+      "date-fns",
+      "embla-carousel-react",
+      "framer-motion",
+      "input-otp",
+      "lucide-react",
+      "next",
+      "next-auth",
+      "next-intl",
+      "next-themes",
+      "prisma",
+      "react",
+      "react-day-picker",
+      "react-dom",
+      "react-hook-form",
+      "react-markdown",
+      "react-resizable-panels",
+      "react-syntax-highlighter",
+      "recharts",
+      "sharp",
+      "sonner",
+      "tailwind-merge",
+      "tailwindcss-animate",
+      "uuid",
+      "vaul",
+      "z-ai-web-dev-sdk",
+      "zod",
+      "zustand"
+    ],
+    "development": [
+      "@tailwindcss/postcss",
+      "@types/react",
+      "@types/react-dom",
+      "bun-types",
+      "eslint",
+      "eslint-config-next",
+      "tailwindcss",
+      "tw-animate-css",
+      "typescript"
+    ],
+    "total": 75
+  },
+  "complexity": {
+    "averageFileSize": 100.36,
+    "maxFileSize": 0,
+    "nestedDepth": 0,
+    "estimatedComplexity": "high"
+  }
+}
